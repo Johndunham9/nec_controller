@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>NEC LCD Monitor MultiSync V321,V461 and LCD4215(R) Controller</title>
+</head>
+<body>
+    <h1>NEC LCD Monitor MultiSync V321,V461 and LCD4215(R) Controller</h1>
+
+    <form action="/form.html" method="POST">
+        <label>Volume: </label>
+        <input type="number" name="volume" min="0" max="100" />
+        <input type="submit" value="Set Volume" style="padding: 6px 8px;" />
+        <br />
+    </form>
+
+    <br />
+
+    <form action="/form.html" method="POST">
+        <label>Power State: </label>
+        <select name="power_state">
+            <option value="1">On</option>
+            <option value="0">Off</option>
+        </select>
+        <input type="submit" value="Set Power State" style="padding: 6px 8px;" />
+        <label>Power State Check: </label>
+        <span id="power_state_check"></span>
+        <script>
+            fetch('/power_state_check')
+              .then(response => response.json())
+              .then(data => {
+                let power_state = data.message;
+                document.getElementById('power_state_check').innerHTML = power_state;
+              });
+        </script>
+    </form>
+</body>
+
+<style>
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 3px 5px;
+    margin-right: 8px;
+}
+
+select {
+    padding: 3px 5px;
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    padding: 6px 8px;
+    font-weight: bold;
+}
+</style>
+</html>
