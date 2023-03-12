@@ -34,7 +34,7 @@ main.py - serves up and handle web form.html requests to python http server.
 
 nec_controller.py - This handles piecing together the monitor commands, calculating check code, converting to ascii, sending the commands and does the grunt, controller work.
 
-monitor_commands.py - hard coded list of hex bytes, representing the commands outlined in the NEC technical manual.
+monitor_commands.py - hard coded lists of hex bytes, representing the commands outlined in the NEC technical manual.
 
 monitor_simulator.py - This "simulated monitor" just prints out all the commands that hit it through TCP/IP as well as track through a global variable the power state and reply back when requested in a simulated fashion, in the manner that the real monitor is expected to do.
 
