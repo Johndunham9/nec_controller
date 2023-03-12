@@ -59,6 +59,6 @@ class NECControllerHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(f.read().encode())
 
 
-with socketserver.TCPServer(("127.0.0.1", 8080), NECControllerHandler) as httpd:
-    print("127.0.0.1", 8080)
+with socketserver.TCPServer(("127.0.0.1", 8000), NECControllerHandler) as httpd:
+    print("127.0.0.1", 8000)
     httpd.serve_forever()
