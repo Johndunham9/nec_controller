@@ -11,7 +11,7 @@ To use, simply pull down the repo in an environment with python 3.7 or greater. 
 
 **WITH REAL MONITOR - THIS IS DEFAULT:** 
 
-All you have to do is run main.py and go to the local/ip port the web form is hosted at. Default is 127.0.0.1:8000. Then open up the web browser at http://127.0.0.1:8080/form.html
+All you have to do is run main.py and go to the local/ip port the web form is hosted at. Default is 127.0.0.1:8000. Then open up the web browser at http://127.0.0.1:8000/form.html
 
 
 **WITH SIMULATED TEST MONITOR:**
