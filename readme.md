@@ -39,3 +39,5 @@ monitor_commands.py - hard coded lists of hex bytes, representing the commands o
 monitor_simulator.py - This "simulated monitor" just prints out all the commands that hit it through TCP/IP as well as track through a global variable the power state and reply back when requested in a simulated fashion, in the manner that the real monitor is expected to do.
 
 unittests.py - These are a couple simple unit tests for the helper functions for the controller. It tests the calculate_bcc function, the convert_to_ascii function as well as the volume_four_byte_calculator function, which is supposed to convert the volume command 0-100 in decimal to the appropriate 4 byte sequence required by the monitor.
+
+form.html - This is the file for the web form, it runs AJAX upon being served to a web browser requesting the state, as well as any time a get/post request is processed with any command and reloaded. The volume, or power OFF command, for example, would be sent and then a follow up call to confirm/retrieve power state from monitor would follow, which would allow the form to update the power state on the page. This works with the simulataed monitor.
