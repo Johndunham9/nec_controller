@@ -1,5 +1,8 @@
 **** Documentation for this NEC controller ****
 
+This controllor is based on this document.
+https://drive.google.com/file/d/1p9ps6QQnc7YdGi3Q04BZmP1BEfXkFi2O/view
+
 **RUNNING THE CODE**
 
 **Disclaimer:** I have not tested this with the actual nec monitor. I spent considerable time trying to get the byte strings correct, but there could still be some issues.
